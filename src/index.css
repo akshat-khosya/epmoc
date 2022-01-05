@@ -1,13 +1,316 @@
-body {
+/* google fonts 
+ont-family: 'Abhaya Libre', serif;
+font-family: 'Alegreya', serif;
+font-family: 'Aleo', serif;
+font-family: 'Arapey', serif;
+font-family: 'Asap Condensed', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bgcolor: #f0f0f0;
+  --bgcolor-400: #d2d2d2;
+  --bgcolor-100: #e1e1e1;
+  --bgcolor-700: #c3c3c3;
+  --tcolor: #121212;
+  --tcolor-100: #333333;
+  --tcolor-400: #272727;
+  --tcolor-700: #1d1d1d;
+  --scroll-100: #e1e1e1;
+  --scroll-400: #4a4a4a;
+  --scroll-700: #272727;
+  --back-shadow: rgba(0, 0, 0, 0.2);
+  --back-shadow-light: rgba(0, 0, 0, 0.1);
+  --transition-time: 200ms;
+  --red: #f44336;
+  --red-100: #ffcdd2;
+  --red-400: #ef5350;
+  --red-700: #d32f2f;
+  --pink: #e91e63;
+  --pink-100: #f8bbd0;
+  --pink-400: #ec407a;
+  --pink-700: #c2185b;
+  --purple: #9c27b0;
+  --purple-100: #e1bee7;
+  --purple-400: #ab47bc;
+  --purple-700: #7b1fa2;
+  --dark-purple: #673ab7;
+  --dark-purple-100: #d1c4e9;
+  --dark-purple-400: #7e57c2;
+  --dark-purple-700: #512da8;
+  --indigo: #3f51b5;
+  --indigo-100: #c5cae9;
+  --indigo-400: #5c6bc0;
+  --indigo-700: #303f9f;
+  --blue: #2196f3;
+  --blue-100: #bbdefb;
+  --blue-400: #42a5f5;
+  --blue-700: #1976d2;
+  --light-blue: #03a9f4;
+  --light-blue-100: #b3e5fc;
+  --light-blue-400: #29b6f6;
+  --light-blue-700: #0288d1;
+  --cyan: #00bcd4;
+  --cyan-100: #b2ebf2;
+  --cyan-400: #26c6da;
+  --cyan-700: #0097a7;
+  --green: #4caf50;
+  --green-100: #c8e6c9;
+  --green-400: #66bb6a;
+  --green-700: #388e3c;
+  --light-green: #8bc34a;
+  --light-green-100: #dcedc8;
+  --light-green-400: #9ccc65;
+  --light-green-700: #689f38;
+  --yellow: #ffeb3b;
+  --yellow-100: #fff9c4;
+  --yellow-400: #ffee58;
+  --yellow-700: #fbc02d;
+  --orange: #ff9800;
+  --orange-100: #ffe0b2;
+  --orange-400: #ffa726;
+  --orange-700: #f57c00;
+  --deep-orange: #ff5722;
+  --deep-orange-100: #ffccbc;
+  --deep-orange-400: #ff7043;
+  --deep-orange-700: #e64a19;
+  --brown: #795548;
+  --brown-100: #d7ccc8;
+  --brown-400: #8d6e63;
+  --brown-700: #5d4037;
+  --grey: #9e9e9e;
+  --grey-100: #f5f5f5;
+  --grey-400: #bdbdbd;
+  --grey-700: #616161;
+  --blue-grey: #607d8b;
+  --blue-grey-100: #cfd8dc;
+  --blue-grey-400: #78909c;
+  --blue-grey-700: #455a64;
+  --blue: #4285f4;
+  --red: #ea4335;
+  --yellow: #fbbc05;
+  --green: #34a853;
+}
+
+.light {
+  --bgcolor: #f0f0f0;
+  --bgcolor-100: #e1e1e1;
+  --bgcolor-400: #d2d2d2;
+  --bgcolor-700: #c3c3c3;
+  --tcolor: #121212;
+  --tcolor-100: #333333;
+  --tcolor-400: #272727;
+  --tcolor-700: #1d1d1d;
+  --back-shadow: rgba(0, 0, 0, 0.2);
+  --back-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --bgcolor: #121212;
+  --bgcolor-100: #333333;
+  --bgcolor-400: #272727;
+  --bgcolor-700: #1d1d1d;
+  --tcolor: #f0f0f0;
+  --tcolor-100: #e1e1e1;
+  --tcolor-400: #d2d2d2;
+  --tcolor-700: #c3c3c3;
+  --back-shadow: rgba(255, 255, 255, 0.2);
+  --back-shadow-light: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  font-size: 16px;
+}
+@media (max-width: 672px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--tcolor);
+}
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  border: none;
+  outline: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.Row {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Row > * {
+  width: 100%;
+}
+
+[class^="Col"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (min-width: 880px) {
+  .Row .Col-lg-100 {
+    width: 100%;
+  }
+  .Row .Col-lg-83 {
+    width: 83.333%;
+  }
+  .Row .Col-lg-80 {
+    width: 80%;
+  }
+  .Row .Col-lg-75 {
+    width: 75%;
+  }
+  .Row .Col-lg-70 {
+    width: 70%;
+  }
+  .Row .Col-lg-66 {
+    width: 66.666%;
+  }
+  .Row .Col-lg-60 {
+    width: 60%;
+  }
+  .Row .Col-lg-50 {
+    width: 50%;
+  }
+  .Row .Col-lg-40 {
+    width: 40%;
+  }
+  .Row .Col-lg-33 {
+    width: 33.333%;
+  }
+  .Row .Col-lg-30 {
+    width: 30%;
+  }
+  .Row .Col-lg-25 {
+    width: 25%;
+  }
+  .Row .Col-lg-20 {
+    width: 20%;
+  }
+  .Row .Col-lg-16 {
+    width: 16.666%;
+  }
+  .Row .Col-lg-10 {
+    width: 10%;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 879.98px) {
+  .Row .Col-md-100 {
+    width: 100%;
+  }
+  .Row .Col-md-83 {
+    width: 83.333%;
+  }
+  .Row .Col-md-80 {
+    width: 80%;
+  }
+  .Row .Col-md-75 {
+    width: 75%;
+  }
+  .Row .Col-md-70 {
+    width: 70%;
+  }
+  .Row .Col-md-66 {
+    width: 66.666%;
+  }
+  .Row .Col-md-60 {
+    width: 60%;
+  }
+  .Row .Col-md-50 {
+    width: 50%;
+  }
+  .Row .Col-md-40 {
+    width: 40%;
+  }
+  .Row .Col-md-33 {
+    width: 33.333%;
+  }
+  .Row .Col-md-30 {
+    width: 30%;
+  }
+  .Row .Col-md-25 {
+    width: 25%;
+  }
+  .Row .Col-md-20 {
+    width: 20%;
+  }
+  .Row .Col-md-16 {
+    width: 16.666%;
+  }
+  .Row .Col-md-10 {
+    width: 10%;
+  }
+}
+
+@media (max-width: 671.98px) {
+  .Row .Col-sm-100 {
+    width: 100%;
+  }
+  .Row .Col-sm-83 {
+    width: 83.333%;
+  }
+  .Row .Col-sm-80 {
+    width: 80%;
+  }
+  .Row .Col-sm-75 {
+    width: 75%;
+  }
+  .Row .Col-sm-70 {
+    width: 70%;
+  }
+  .Row .Col-sm-66 {
+    width: 66.666%;
+  }
+  .Row .Col-sm-60 {
+    width: 60%;
+  }
+  .Row .Col-sm-50 {
+    width: 50%;
+  }
+  .Row .Col-sm-40 {
+    width: 40%;
+  }
+  .Row .Col-sm-33 {
+    width: 33.333%;
+  }
+  .Row .Col-sm-30 {
+    width: 30%;
+  }
+  .Row .Col-sm-25 {
+    width: 25%;
+  }
+  .Row .Col-sm-20 {
+    width: 20%;
+  }
+  .Row .Col-sm-16 {
+    width: 16.666%;
+  }
+  .Row .Col-sm-10 {
+    width: 10%;
+  }
 }
