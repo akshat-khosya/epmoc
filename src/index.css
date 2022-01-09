@@ -19,6 +19,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 :root {
+  --white:#fff;
   --bgcolor: #f0f0f0;
   --bgcolor-400: #d2d2d2;
   --bgcolor-100: #e1e1e1;
