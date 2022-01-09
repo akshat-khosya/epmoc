@@ -7,7 +7,6 @@ function Home() {
             <Navbar />
             
             <BlogCard/>
-
         </div>
     )
 }
