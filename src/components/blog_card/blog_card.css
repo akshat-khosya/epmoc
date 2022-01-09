@@ -1,0 +1,21 @@
+.imgs{
+  border-radius: 100%;
+  width: 50px;
+  float: left;
+}
+.img{
+  position: relative;
+}
+.subscript {
+  position: relative;
+  background-color: #FFF;
+  z-index: 1;
+  width: 50%;
+  bottom: 40px;
+
+}
+.card-body{
+  padding: 0;
+  position: relative;
+  bottom: 30px;
+}
