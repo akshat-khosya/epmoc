@@ -5,7 +5,8 @@ import Footer from '../../components/footer/Footer'
 function Home() {
     return (
         <div className='home'>
-            <Navbar />
+           
+            <Team_card></Team_card>
             home
             <Footer />
         </div>
