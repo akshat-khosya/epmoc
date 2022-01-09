@@ -21,7 +21,7 @@ function App() {
           path="/contact"
           element={<Home axiosInstance={axiosInstance} />}
         />
-        <Route path="/theme" element={<Home axiosInstance={axiosInstance} />} />
+       
       </Routes>
     </Router>
   );

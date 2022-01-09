@@ -63,11 +63,9 @@ function Navbar() {
               <Link to="/contact">Contact Us</Link>
             </li>
             <li
-              className={`navbar-item ${
-                location.pathname === "/theme" ? "navbar-item-active" : ""
-              }`}
+              className="navbar-item"
             >
-              <Link to="/theme">Theme</Link>
+              Theme
             </li>
           </ul>
         </div>
