@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './scroll.css';
 const ScrollToTop = ({ startAfter = 200, takeTo = 0 }) => {
     const [showScrollButton, setshowScrollButton] = useState(false);
     window.onscroll = () => {
@@ -16,7 +16,8 @@ const ScrollToTop = ({ startAfter = 200, takeTo = 0 }) => {
                 showScrollButton && (
                     <button className="scroll-to-top" onClick={topFunction}>
                         <span className="material-icons">
-                            arrow_upward
+                            <i class="fas fa-arrow-up fa-2x"></i>
+                            {/* <i class="fas fa-arrow-alt-circle-up"></i> */}
                         </span>
                     </button>
                 )

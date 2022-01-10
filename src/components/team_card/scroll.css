@@ -1,0 +1,39 @@
+.scroll-to-top {
+    background-color:grey;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2000;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    overflow: visible;
+    transition: all var(--transition-time) ease-in-out;
+   }
+    .scroll-to-top:hover {
+  background-color: var(--primary-4);
+      color: white; }
+    .scroll-to-top:active, .scroll-to-top:focus {
+      outline: none;
+      background-color: var(--brown-700);
+      color:whitesmoke; }
+
+
+      .material-icons {
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+        .fas
+        {
+            size: 18rem;
+        }

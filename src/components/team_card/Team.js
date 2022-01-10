@@ -4,14 +4,14 @@ const teams = [
 		teamTitle: "Executive Members",
 		members: [
 			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
+				name: "Varun Prohit",
+				subtitle: "Competitive Programmer",
 				image: person0,
 				socials: [
 					{
 						handle: "instagram",
-						link: "https://instagram.com/akshatmittal61",
-						username: "@akshatmittal61",
+						link: "https://instagram.com/varunprohit",
+						username: "@varunprohit",
 					},
 					{
 						handle: "linkedin",
