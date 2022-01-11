@@ -13,7 +13,7 @@ function App() {
         <Route path="/team" element={<Home axiosInstance={axiosInstance} />} />
         <Route path="/about" element={<Home axiosInstance={axiosInstance} />} />
         <Route
-          path="/calendar"
+          path="/calender"
           element={<Home axiosInstance={axiosInstance} />}
         />
         <Route path="/blog" element={<Home axiosInstance={axiosInstance} />} />
