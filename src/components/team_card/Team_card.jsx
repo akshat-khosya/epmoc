@@ -7,7 +7,7 @@ import ld from "./images/linkedin.svg";
 import ig from "./images/instagram.svg";
 import gh from "./images/github.svg";
 import ml from "./images/email.svg";
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "../scroll_to_top/ScrollToTop";
 import './team_card.css';
 
 const Team = () => {
