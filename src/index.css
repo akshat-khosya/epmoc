@@ -19,6 +19,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 :root {
+  --white:#fff;
   --bgcolor: #f0f0f0;
   --bgcolor-400: #d2d2d2;
   --bgcolor-100: #e1e1e1;
@@ -32,6 +33,7 @@ font-family: 'Nunito', sans-serif;
   --scroll-700: #272727;
   --back-shadow: rgba(0, 0, 0, 0.2);
   --back-shadow-light: rgba(0, 0, 0, 0.1);
+  --back-shadow-whit:rgb(218 220 224);
   --transition-time: 200ms;
   --red: #f44336;
   --red-100: #ffcdd2;
@@ -104,6 +106,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 .light {
+  --white:#fff;
   --bgcolor: #f0f0f0;
   --bgcolor-100: #e1e1e1;
   --bgcolor-400: #d2d2d2;
@@ -114,9 +117,13 @@ font-family: 'Nunito', sans-serif;
   --tcolor-700: #1d1d1d;
   --back-shadow: rgba(0, 0, 0, 0.2);
   --back-shadow-light: rgba(0, 0, 0, 0.1);
+  --back-shadow-whit:rgb(218 220 224);
+  --blue-100: #bbdefb;
+  
 }
 
 .dark {
+  --white:rgb(0, 0, 0);
   --bgcolor: #121212;
   --bgcolor-100: #333333;
   --bgcolor-400: #272727;
@@ -127,6 +134,9 @@ font-family: 'Nunito', sans-serif;
   --tcolor-700: #c3c3c3;
   --back-shadow: rgba(255, 255, 255, 0.2);
   --back-shadow-light: rgba(255, 255, 255, 0.1);
+  --back-shadow-whit:rgba(31, 31, 32, 0.438);
+  --blue: rgb(236, 190, 36);
+  --blue-100: #dbb923a9;
 }
 
 html {
