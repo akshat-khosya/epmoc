@@ -65,7 +65,7 @@ function Navbar() {
                 location.pathname === "/calendar" ? "navbar-item-active" : ""
               }`}
             >
-              <Link to="/calendar">Calender</Link>
+              <Link to="/calendar">Calendar</Link>
             </li>
             <li
               className={`navbar-item ${
@@ -121,9 +121,9 @@ function Navbar() {
                 </li>
                 <li onClick={()=>{setSidebar(!sidebar)}} className=
                 {`sidebar-item ${
-                  location.pathname === "/calender" ? "sidebar-item-active" : ""
+                  location.pathname === "/calendar" ? "sidebar-item-active" : ""
                 }`}>
-                <Link className="sidebar-link" to="/calender"><i className={`v-icon notranslate far fa-calendar-alt ${theme?"theme--light":"theme--dark"}`}></i><span>Calender</span></Link>
+                <Link className="sidebar-link" to="/calendar"><i className={`v-icon notranslate far fa-calendar-alt ${theme?"theme--light":"theme--dark"}`}></i><span>Calendar</span></Link>
                 </li>
                 <li onClick={()=>{setSidebar(!sidebar)}} className=
                 {`sidebar-item ${

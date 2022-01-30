@@ -35,6 +35,7 @@ font-family: 'Nunito', sans-serif;
   --back-shadow-light: rgba(0, 0, 0, 0.1);
   --back-shadow-whit:rgb(218 220 224);
   --transition-time: 200ms;
+  --red-hacktober:rgb(181, 58, 37);
   --red: #f44336;
   --red-100: #ffcdd2;
   --red-400: #ef5350;
@@ -149,7 +150,7 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--tcolor);
 }
 a:hover,

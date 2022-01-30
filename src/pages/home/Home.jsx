@@ -1,14 +1,15 @@
-import './home.css'
-import Navbar from '../../components/navbar/Navbar'
-import BlogCard from '../../components/blog_card/BlogCard.jsx'
+import "./home.css";
+import Navbar from "../../components/navbar/Navbar";
+import LogoHome from "../../components/logo/LogoHome";
+
 function Home() {
-    return (
-        <div className='home'>
-            <Navbar />
-            
-            <BlogCard/>
-        </div>
-    )
+  return (
+    <div className="home">
+      <div className="epmoc-container"><h1>Epmoc</h1><p>Together we make</p></div>
+      <LogoHome />
+    
+    </div>
+  );
 }
 
-export default Home
+export default Home;
