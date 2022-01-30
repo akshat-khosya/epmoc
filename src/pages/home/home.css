@@ -1,7 +1,7 @@
 main {
   background-color: var(--white);
   width: 100vw;
-  height: 100vh;
+  height: 86vh;
   margin-top: 7vh;
   position: fixed;
   overflow-y: auto;
