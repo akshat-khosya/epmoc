@@ -6,9 +6,9 @@ function Event() {
   return (
       <div className='event'>
           <div className="event-container">
-            {eventData.map((e)=>{
+            {eventData.map((e)=>(
                 <EventCard data={e} />
-            })}
+            ))}
           </div>
           
 

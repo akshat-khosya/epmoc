@@ -1,7 +1,7 @@
 import React from 'react';
 import './eventcard.css';
 function EventCard({data}) {
-    console.log(data);
+    
   return (
   
     <div className="card">
