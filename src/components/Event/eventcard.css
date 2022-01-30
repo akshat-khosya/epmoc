@@ -47,7 +47,7 @@
 }
 .card-body p {
   font-size: 18px;
-  margin: 0 0 40px;
+  margin: 0  40px;
   overflow: hidden;
   text-overflow: ellipsis;
 
