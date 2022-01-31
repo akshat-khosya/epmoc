@@ -4,11 +4,11 @@ function EventCard({data}) {
     
   return (
   
-    <div className="card">
-      <div className="card-header">
+    <div className="Card">
+      <div className="Card-header">
         <img src={data.img} alt="rover" />
       </div>
-      <div className="card-body">
+      <div className="Card-body">
         <span className="tag tag-teal">{data.category}</span>
         <h4>
           {data.title}

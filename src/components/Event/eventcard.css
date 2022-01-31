@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.card {
+.Card {
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -8,12 +8,12 @@
   overflow: hidden;
   width: 350px;
 }
-.card-header img {
+.Card-header img {
   width: 100%;
 
   object-fit: cover;
 }
-.card-body {
+.Card-body {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -42,10 +42,10 @@
 .tag-pink {
   background-color: #cd5b9f;
 }
-.card-body h4{
+.Card-body h4{
     cursor: pointer;
 }
-.card-body p {
+.Card-body p {
   font-size: 18px;
   
   overflow: hidden;
