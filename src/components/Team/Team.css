@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    width: 100vw;
+    
+}
+.row{
+    width:500vw;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    /* transition: 1s; */
+}
+.col{
+    top: 10%;
+    width: 100vw;
+    position: relative;
+}
+
+.detail{
+    position: absolute;
+    left: 200px;
+    width:600px;
+}
+.heading-active{
+    position: relative;
+    animation: animateHeading 0.5s ease-in-out;
+}
+.span-active{
+    position: relative;
+    animation: animatePara 0.5s ease-in-out;
+}
+.para-active{
+    position: relative;
+    animation: animatePara 1s ease-in-out;
+
+}
+.img img{
+    position: absolute;
+    right: 200px;
+    width: 350px;
+    height: 100x;
+
+}
+.img-active img{
+    position: absolute;
+    animation: animateImg 0.7s ease-in-out;
+}
+@keyframes animateHeading {
+    0% {right: -100px;
+    opacity: 0;}
+    100%{
+        right: 0px;
+    opacity: 1;
+    }
+  }
+  @keyframes animatePara {
+    0% {bottom: -100px;
+    opacity: 0;}
+    100% {bottom: 0;
+    opacity: 1;}
+  }
+@keyframes animateImg {
+    0% {right:10px;
+    opacity: 0.1;}
+    10%{
+        right:0px;
+    opacity: 0;
+    }
+    100% {
+       right:200px;
+    opacity: 1;}
+    }
+    .slide-button{
+       position: absolute;
+       left: 50%;
+       transform: translate(-50%);
+       bottom: -50px;
+    }
+    .button{
+        display:inline-block;
+        width:40px;
+        height:40px;
+        margin: 4px;
+        border-radius:50%;
+       background-color: black;
+       cursor: pointer;
+       transition: 0.5s;
+    }
+    .button:hover{
+        width: 60px;
+        height: 60px;
+    }
+    .active{
+        width: 60px;
+        height: 60px;
+    }
+    @media screen and (max-width:1000px) {
+        .row{
+            flex-direction: row;
+        }
+        .img{
+            position: relative;
+            top:300px;
+        }
+        .img-active img{
+            animation: animateImg 0.5s ease;
+        }
+        .slide-button{
+            top:900px;
+            bottom: -10px;
+        }
+        .detail{
+          left: 100px;
+        }
+    }
+    
