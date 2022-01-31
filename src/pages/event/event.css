@@ -6,3 +6,38 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+.event-heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    
+}
+.event >.event-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    
+}
+.event-heading > h1{
+    border-bottom: 2px solid var(--cyan-400);
+    font-size: 50px;
+    color: var(--blue);
+}
+
+.event-upcoming>.event-heading>h1{
+    border-bottom: 2px solid #cd5b9f;
+    font-size: 50px;
+    color: #cd5b9f;
+}
+
+.event-past>.event-heading>h1{
+    border-bottom: 2px solid #5e76bf;
+    font-size: 50px;
+    color: #5e76bf;
+}
